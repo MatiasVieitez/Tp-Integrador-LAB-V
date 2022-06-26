@@ -11,7 +11,12 @@
 <header>
 	<ul class="lista">
 		<li class="opcion">Clientes</li>
-		<li class="opcion">Bibliotecas</li>
+		<form method="get" action="Biblioteca.html">
+			<li class="opcion">
+				<input type="submit" value="Bibliotecas" class="redireccion">
+				<input type="hidden" value="${usuarioActual}" name = "usuarioActual">
+			</li>
+		</form>
 		<li class="opcion">Prestamos</li>
 	</ul>
 </header>
@@ -30,6 +35,16 @@
 		list-style-type: none;
 		font-weight: bold;
 	}
+	.redireccion{
+	 	background-color: transparent;
+	 	border-style: none;
+	 	text-decoration-line: underline;
+	 	color: black;
+	}
+	.redireccion:hover{
+		cursor: pointer;
+	}
+	
 </style>
 
 </html>
